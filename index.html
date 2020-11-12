@@ -1,78 +1,26 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styleBasic.css">
 
-header{
-    font-family: sans-serif;
-    width: 100%;
-    background-color: rgb(255, 216, 143);
-    height: fit-content;
-    text-align: center;
-}
-
-header h1{
-    padding: 10px;
-}
-
-.wrapper{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.calc{
-    background-color: rgb(207, 207, 207);
-    width: 230px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-input{
-    height: 40px;
-    font-size: 20px;
-    width: 165px;
-}
-
-.display{
-    margin-top: 29px;
-}
-
-.wrapper div{
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    width: 169px;
-}
-
-.line5 input{
-    width: 169px;
-}
-
-.textbox{
-    position: absolute;
-    bottom: 0;
-    background-color: rgb(255, 216, 143);
-    width: 100%;
-    height: 320px;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.box1{
-    height: 50px;
-    padding: 10px;
-}
-
-.box2{
-    height: 100px;
-    padding: 10px;
-}
-
-.examples{
-    font-size: 17px;
-}
+</head>
+<body>
+    <header><h1>Calculator</h1></header>
+    <div class="wrapper">
+        <form class="calc" name="calc">
+            <input class="display" type="text" name="display" id="tall">
+            <div class="line1"><input type="button" value="7" onclick="calc.display.value+='7'"><input type="button" value="8" onclick="calc.display.value+='8'"><input type="button" value="9" onclick="calc.display.value+='9'"><input type="button" value="/" onclick="calc.display.value+='/'"></div>
+            <div class="line2"><input type="button" value="4" onclick="calc.display.value+='4'"><input type="button" value="5" onclick="calc.display.value+='5'"><input type="button" value="6" onclick="calc.display.value+='6'"><input type="button" value="*" onclick="calc.display.value+='*'"></div>
+            <div class="line3"><input type="button" value="1" onclick="calc.display.value+='1'"><input type="button" value="2" onclick="calc.display.value+='2'"><input type="button" value="3" onclick="calc.display.value+='3'"><input type="button" value="-" onclick="calc.display.value+='-'"></div>
+            <div class="line4"><input type="button" value="." onclick="calc.display.value+='.'"><input type="button" value="0" onclick="calc.display.value+='0'"><input type="button" value="+" onclick="calc.display.value+='+'"><input type="button" value="=" onclick="calc.display.value=eval(calc.display.value)"></div>
+            <div class="line5"><input type="button" value="Clear" onclick="calc.display.value=''"></div>
+        </form>
+    </div>
+    <div class="textbox">
+        <div class="box1">This calculator can be used to find the answer to simple mathematical equations.
+            <br>It can calculate plus, minus, division and multiplication.<br>It can also handle decimals and negative numbers.</div>
+        <div class="box2">To use the calculator you can either click on to input-box, or your can click on the buttons that represent numbers and sign.<br>The answer will appear in the input-box where the equation was, you can continue to do calculations with the answer you got. Use the clear button to remove everything from the input-box</div>
+        <div class="examples">Example: 3+5=<br> Solution 1: first click on the "3" button, then click on "5", then click in "=" and the calculator will give you the answer <br>Solution 2: click on the input-box at the topand type in the equation, then click on the "=" button</div>
+    </div>
+</body>
+</html>
