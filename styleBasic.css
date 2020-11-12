@@ -29,7 +29,7 @@ header h1{
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 input{
@@ -51,4 +51,28 @@ input{
 
 .line5 input{
     width: 169px;
+}
+
+.textbox{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255, 216, 143);
+    width: 100%;
+    height: 320px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.box1{
+    height: 50px;
+    padding: 10px;
+}
+
+.box2{
+    height: 100px;
+    padding: 10px;
+}
+
+.examples{
+    font-size: 17px;
 }
